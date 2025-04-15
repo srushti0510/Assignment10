@@ -73,14 +73,24 @@ class ErrorResponse(BaseModel):
     details: Optional[str] = Field(None, example="The requested resource was not found.")
 
 class UserListResponse(BaseModel):
-    items: List[UserResponse] = Field(..., example=[{
-        "id": uuid.uuid4(), "nickname": generate_nickname(), "email": "john.doe@example.com",
-        "first_name": "John", "bio": "Experienced developer", "role": "AUTHENTICATED",
-        "last_name": "Doe", "bio": "Experienced developer", "role": "AUTHENTICATED",
-        "profile_picture_url": "https://example.com/profiles/john.jpg", 
-        "linkedin_profile_url": "https://linkedin.com/in/johndoe", 
-        "github_profile_url": "https://github.com/johndoe"
-    }])
+    items: List[UserResponse] = Field(
+        ...,
+        example=[
+            {
+                "id": uuid.uuid4(),
+                "nickname": generate_nickname(),
+                "email": "john.doe@example.com",
+                "first_name": "John",
+                "last_name": "Doe",
+                "bio": "Experienced developer",
+                "role": "AUTHENTICATED",
+                "profile_picture_url": "https://example.com/profiles/john.jpg",
+                "linkedin_profile_url": "https://linkedin.com/in/johndoe",
+                "github_profile_url": "https://github.com/johndoe",
+                "is_professional": True
+            }
+        ]
+    )
     total: int = Field(..., example=100)
     page: int = Field(..., example=1)
     size: int = Field(..., example=10)
