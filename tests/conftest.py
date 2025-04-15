@@ -242,6 +242,7 @@ def user_base_data_invalid():
 def user_create_data(user_base_data):
     return {
         **user_base_data,
+        "nickname": "john_doe", 
         "password": "Secure*1234"
     }
 
