@@ -68,7 +68,7 @@ To check test coverage, run:
 ```bash
 docker compose exec fastapi pytest --cov=app --cov-report=term-missing
 ```
-As of the final commit, test coverage is: "88%"
+As of the final commit, test coverage is: 88%
 
 
 ## Reflection
