@@ -54,7 +54,7 @@ Here are the 6 issues I identified, fixed, tested, and merged:
 ## Docker Image
 
 You can find the deployed Docker image here:  
- **[DockerHub - srushti5/assignment10](https://hub.docker.com/r/srushti5/wis_club_api)**
+ **[DockerHub - srushti5/assignment10](https://hub.docker.com/r/srushti5/assignment10)**
 
 To pull the image:
 ```bash
@@ -73,8 +73,8 @@ As of the final commit, test coverage is: 88%
 
 ## Reflection
 
-Working on this QA-focused FastAPI assignment gave me a deeper understanding of backend validation, test-driven development, and collaborative workflows. I gained hands-on experience in identifying real-world bugs such as mismatched Swagger examples, missing schema fields, weak validation regexes, and test fixture inconsistencies. Implementing a secure password policy and improving schema-to-fixture consistency taught me the importance of maintaining a tightly aligned contract between the API layer and test layer.
+Through this assignment, I deepened my understanding of schema validation, test-driven development, and real-world bug resolution using FastAPI and SQLAlchemy. Fixing issues like invalid regex patterns, missing test data, and misaligned examples taught me the importance of consistent schema and API documentation.
 
-One of the main challenges I faced was dealing with the email service and SMTP mocking. I encountered errors when rendering templates and testing mail delivery without a real SMTP server. To resolve this, I created DummySMTPClient and used monkeypatching and exception assertions to simulate and validate edge cases. Another challenge was increasing the test coverage to 88% — I had to systematically identify missing branches and untested conditions and write focused test cases to handle them. Debugging these with async functions and fixtures was a learning curve, but it deepened my understanding of asynchronous testing in Python.
+On the collaborative side, I practiced structured Git workflows: creating feature branches, linking issues to pull requests, and using proper commit hygiene. Writing meaningful test cases not only improved coverage (88%) but also made the app more robust. I also explored mocking email services and handling edge cases in Markdown templates, which was new and exciting.
 
-Overall, this assignment not only strengthened my FastAPI and Pytest skills but also reinforced the importance of code coverage, documentation, and GitHub collaboration. I now feel more confident in contributing to production-quality backend systems with robust test suites and CI/CD pipelines.
+This assignment highlighted how critical QA and testing are in the software lifecycle — not just to verify correctness, but to ensure the application behaves reliably in real scenarios. The debugging experience was hands-on, and I now feel more confident in contributing to production-level backend services.
