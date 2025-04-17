@@ -54,7 +54,7 @@ Here are the 6 issues I identified, fixed, tested, and merged:
 ## Docker Image
 
 You can find the deployed Docker image here:  
- **[DockerHub - srushti5/assignment10](https://hub.docker.com/r/srushti5/assignment10)**
+ **[DockerHub - srushti5/assignment10](https://hub.docker.com/r/srushti5/wis_club_api)**
 
 To pull the image:
 ```bash
